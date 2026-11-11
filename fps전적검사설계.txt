@@ -1,0 +1,110 @@
+player_id : VARCHAR(36) NOT NULL [PK] (플레이어 고유 식별자 / UUID 등)
+
+nickname : VARCHAR(50) NOT NULL (플레이어 닉네임)
+
+tag : VARCHAR(10) NOT NULL (배틀태그 / #1234 등)
+
+
+
+team_id : VARCHAR(36) NOT NULL [PK] (팀 고유 식별자)
+
+team_name : VARCHAR(100) NOT NULL (팀 이름)
+
+
+
+player_id : VARCHAR(36) NOT NULL [PK, FK -> PLAYER.player_id]
+
+team_id : VARCHAR(36) NOT NULL [PK, FK -> TEAM.team_id]
+
+join_date : DATE NOT NULL (팀 가입일)
+
+
+
+map_id : INT NOT NULL AUTO_INCREMENT [PK] (맵 고유 번호)
+
+map_name : VARCHAR(50) NOT NULL (맵 이름)
+
+map_type : VARCHAR(30) (맵 유형 / 폭파미션 등)
+
+
+
+agent_id : INT NOT NULL AUTO_INCREMENT [PK] (에이전트 고유 번호)
+
+agent_name : VARCHAR(50) NOT NULL (에이전트 이름)
+
+role : VARCHAR(30) NOT NULL (역할군 / 타격대, 감시자 등)
+
+
+
+season_id : INT NOT NULL AUTO_INCREMENT [PK] (시즌 고유 번호)
+
+season_name : VARCHAR(50) NOT NULL (시즌 이름)
+
+start_date : DATE NOT NULL (시즌 시작일)
+
+end_date : DATE NOT NULL (시즌 종료일)
+
+
+
+match_id : VARCHAR(36) NOT NULL [PK] (경기 고유 식별자)
+
+map_id : INT NOT NULL [FK -> MAP.map_id] (진행된 맵)
+
+season_id : INT NOT NULL [FK -> SEASON.season_id] (속한 시즌)
+
+match_date : DATETIME NOT NULL (경기 진행 일시)
+
+match_mode : VARCHAR(30) NOT NULL (일반전, 경쟁전 등)
+
+duration : INT NOT NULL (진행 시간 - 초 단위)
+
+team_a_score : INT NOT NULL DEFAULT 0 (공격/팀A 라운드 점수)
+
+team_b_score : INT NOT NULL DEFAULT 0 (수비/팀B 라운드 점수)
+
+
+
+match_id : VARCHAR(36) NOT NULL [PK, FK -> MATCH.match_id]
+
+team_id : VARCHAR(36) NOT NULL [PK, FK -> TEAM.team_id]
+
+team_side : VARCHAR(10) NOT NULL (시작 진영 / RED, BLUE)
+
+result : VARCHAR(10) NOT NULL (경기 결과 / WIN, LOSE, DRAW)
+
+
+
+match_id : VARCHAR(36) NOT NULL [PK, FK -> MATCH.match_id]
+
+player_id : VARCHAR(36) NOT NULL [PK, FK -> PLAYER.player_id]
+
+team_id : VARCHAR(36) NOT NULL [FK -> TEAM.team_id]
+
+agent_id : INT NOT NULL [FK -> AGENT.agent_id] (선택한 요원)
+
+kills : INT NOT NULL DEFAULT 0 (총 킬 수)
+
+deaths : INT NOT NULL DEFAULT 0 (총 데스 수)
+
+assists : INT NOT NULL DEFAULT 0 (총 어시스트 수)
+
+
+weapon_id : INT NOT NULL AUTO_INCREMENT [PK] (무기 고유 번호)
+
+weapon_name : VARCHAR(50) NOT NULL (무기 이름)
+
+weapon_type : VARCHAR(30) NOT NULL (무기 분류 / 소총, 저격소총 등)
+
+
+
+match_id : VARCHAR(36) NOT NULL [PK, FK -> MATCH_PLAYER.match_id]
+
+player_id : VARCHAR(36) NOT NULL [PK, FK -> MATCH_PLAYER.player_id]
+
+weapon_id : INT NOT NULL [PK, FK -> WEAPON.weapon_id]
+
+kill_count : INT NOT NULL DEFAULT 0 (해당 무기로 달성한 킬 수)
+
+shot_count : INT NOT NULL DEFAULT 0 (해당 무기 총 발사 수)
+
+hit_count : INT NOT NULL DEFAULT 0 (해당 무기 적중 수)
