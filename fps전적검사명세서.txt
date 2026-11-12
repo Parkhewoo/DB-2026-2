@@ -1,110 +1,81 @@
-player_id : VARCHAR(36) NOT NULL [PK] (플레이어 고유 식별자 / UUID 등)
 
-nickname : VARCHAR(50) NOT NULL (플레이어 닉네임)
-
-tag : VARCHAR(10) NOT NULL (배틀태그 / #1234 등)
-
-
-
-team_id : VARCHAR(36) NOT NULL [PK] (팀 고유 식별자)
-
-team_name : VARCHAR(100) NOT NULL (팀 이름)
-
-
-
-player_id : VARCHAR(36) NOT NULL [PK, FK -> PLAYER.player_id]
-
-team_id : VARCHAR(36) NOT NULL [PK, FK -> TEAM.team_id]
-
-join_date : DATE NOT NULL (팀 가입일)
-
-
-
-map_id : INT NOT NULL AUTO_INCREMENT [PK] (맵 고유 번호)
-
-map_name : VARCHAR(50) NOT NULL (맵 이름)
-
-map_type : VARCHAR(30) (맵 유형 / 폭파미션 등)
-
-
-
-agent_id : INT NOT NULL AUTO_INCREMENT [PK] (에이전트 고유 번호)
-
-agent_name : VARCHAR(50) NOT NULL (에이전트 이름)
-
-role : VARCHAR(30) NOT NULL (역할군 / 타격대, 감시자 등)
-
-
-
-season_id : INT NOT NULL AUTO_INCREMENT [PK] (시즌 고유 번호)
-
-season_name : VARCHAR(50) NOT NULL (시즌 이름)
-
-start_date : DATE NOT NULL (시즌 시작일)
-
-end_date : DATE NOT NULL (시즌 종료일)
-
-
-
-match_id : VARCHAR(36) NOT NULL [PK] (경기 고유 식별자)
-
-map_id : INT NOT NULL [FK -> MAP.map_id] (진행된 맵)
-
-season_id : INT NOT NULL [FK -> SEASON.season_id] (속한 시즌)
-
-match_date : DATETIME NOT NULL (경기 진행 일시)
-
-match_mode : VARCHAR(30) NOT NULL (일반전, 경쟁전 등)
-
-duration : INT NOT NULL (진행 시간 - 초 단위)
-
-team_a_score : INT NOT NULL DEFAULT 0 (공격/팀A 라운드 점수)
-
-team_b_score : INT NOT NULL DEFAULT 0 (수비/팀B 라운드 점수)
-
-
-
-match_id : VARCHAR(36) NOT NULL [PK, FK -> MATCH.match_id]
-
-team_id : VARCHAR(36) NOT NULL [PK, FK -> TEAM.team_id]
-
-team_side : VARCHAR(10) NOT NULL (시작 진영 / RED, BLUE)
-
-result : VARCHAR(10) NOT NULL (경기 결과 / WIN, LOSE, DRAW)
-
-
-
-match_id : VARCHAR(36) NOT NULL [PK, FK -> MATCH.match_id]
-
-player_id : VARCHAR(36) NOT NULL [PK, FK -> PLAYER.player_id]
-
-team_id : VARCHAR(36) NOT NULL [FK -> TEAM.team_id]
-
-agent_id : INT NOT NULL [FK -> AGENT.agent_id] (선택한 요원)
-
-kills : INT NOT NULL DEFAULT 0 (총 킬 수)
-
-deaths : INT NOT NULL DEFAULT 0 (총 데스 수)
-
-assists : INT NOT NULL DEFAULT 0 (총 어시스트 수)
-
-
-weapon_id : INT NOT NULL AUTO_INCREMENT [PK] (무기 고유 번호)
-
-weapon_name : VARCHAR(50) NOT NULL (무기 이름)
-
-weapon_type : VARCHAR(30) NOT NULL (무기 분류 / 소총, 저격소총 등)
-
-
-
-match_id : VARCHAR(36) NOT NULL [PK, FK -> MATCH_PLAYER.match_id]
-
-player_id : VARCHAR(36) NOT NULL [PK, FK -> MATCH_PLAYER.player_id]
-
-weapon_id : INT NOT NULL [PK, FK -> WEAPON.weapon_id]
-
-kill_count : INT NOT NULL DEFAULT 0 (해당 무기로 달성한 킬 수)
-
-shot_count : INT NOT NULL DEFAULT 0 (해당 무기 총 발사 수)
-
-hit_count : INT NOT NULL DEFAULT 0 (해당 무기 적중 수)
+플레이어 테이블
+
+한글컬럼명 	영문컬럼명 	데이터타입 	널 허용 여부 	PK/FK 	설명					제약조건
+플레이어아이디 	player_id  		VARCHAR2(36) 	N 			PK		플레이어 고유 식별자	
+닉네임		nickname  		VARCHAR2(50) 	N	 				플레이어 닉네임
+태그			tag  			VARCHAR2(10) 	N	 				배틀태그 / #1234 		UNIQUE (nickname, tag)
+
+팀 테이블
+한글컬럼명 	영문컬럼명 	데이터타입 	널 허용 여부 	PK/FK 	설명					제약조건
+팀아이디		team_id  		VARCHAR2(36) 	N			PK 		팀 고유 식별자
+팀이름		team_name 	VARCHAR2(100) 	N	 				팀 이름
+
+소속
+한글컬럼명 	영문컬럼명 	데이터타입 	널 허용 여부 	PK/FK 	설명					제약조건
+플레이어아이디	player_id  		VARCHAR2(36) 	N		 	PK, FK  	플레이어테이블외래키
+팀아이디		team_id  		VARCHAR2(36) 	N 			PK, FK 	팀테이블외래키
+가입일		join_date  		DATE	 		N					팀 가입일
+
+맵테이블
+한글컬럼명 	영문컬럼명 	데이터타입 	널 허용 여부 	PK/FK 	설명					제약조건
+맵아이디		map_id 		NUMBER 		N 			PK 		맵 고유 번호			GENERATED ALWAYS AS IDENTITY
+맵이름		map_name  	VARCHAR2(50) 	N 					맵 이름
+맵종류		map_type  		VARCHAR2(30) 	N					맵 유형
+
+에이전트테이블
+한글컬럼명 	영문컬럼명 	데이터타입 	널 허용 여부 	PK/FK 	설명					제약조건
+에이전트아이디	agent_id 		NUMBER 		N			PK 		에이전트 고유 번호		GENERATED ALWAYS AS IDENTITY
+에이전트이름	agent_name  	VARCHAR2(50) 	N					 에이전트 이름
+역할군		role  			VARCHAR2(30) 	N 					역할군
+
+시즌테이블
+한글컬럼명 	영문컬럼명 	데이터타입 	널 허용 여부 	PK/FK 	설명					제약조건
+시즌아이디		season_id  		NUMBER 		N 			PK 		시즌 고유 번호			GENERATED ALWAYS AS IDENTITY
+시즌이름		season_name  	VARCHAR2(50) 	N					시즌 이름
+시작일		start_date  		DATE 		N					시즌 시작일
+종료일		end_date  		DATE		 	N 					시즌 종료일
+
+경기테이블
+한글컬럼명 	영문컬럼명 	데이터타입 	널 허용 여부 	PK/FK 	설명					제약조건
+경기아이디		match_id  		VARCHAR2(36) 	N			PK 		경기 고유 식별자
+맵아이디		map_id  		NUMBER 		N 			FK 		맵테이블외래키
+시즌아이디		season_id  		NUMBER 		N 			FK 		시즌테이블외래키
+경기날짜		match_date 	DATE 		N					경기 진행 일시
+경기모드		match_mode 	VARCHAR2(30) 	N					일반전, 경쟁전			CHECK (match_mode IN ('Unranked', 'Competitive'))
+진행시간		duration 		NUMBER 		N 					진행 시간 - 초 단위
+블루팀점수		team_a_score  	NUMBER 		N 				 	블루팀점수				DEFAULT 0, CHECK (team_a_score >= 0)
+레드팀점수		team_b_score  	NUMBER 		N 				 	레드팀점수				DEFAULT 0, CHECK (team_b_score >= 0)
+
+팀참가
+한글컬럼명 	영문컬럼명 	데이터타입 	널 허용 여부 	PK/FK 	설명					제약조건
+경기아이디		match_id 		VARCHAR2(36) 	N 			PK, FK  	경기테이블외래키
+팀아이디		team_id  		VARCHAR2(36) 	N 			PK, FK  	팀테이블외래키
+진영			team_side 		VARCHAR2(10) 	N 					시작 진영 				CHECK (team_side IN ('BLUE', 'RED'))
+경기결과		result  		VARCHAR2(10) 	N 					경기 결과 				CHECK (result IN ('WIN', 'LOSE', 'DRAW'))
+
+플레이어참가
+한글컬럼명 	영문컬럼명 	데이터타입 	널 허용 여부 	PK/FK 	설명					제약조건
+경기아이디		match_id  		VARCHAR2(36) 	N 			PK, FK 	경기테이블외래키
+플레이어아이디	player_id  		VARCHAR2(36) 	N		 	PK, FK  	플레이어테이블외래키
+팀아이디		team_id  		VARCHAR2(36) 	Y 			FK  		팀테이블외래키
+진영			team_side		VARCHAR2(10)	N					소속진영				CHECK (team_side IN ('BLUE', 'RED'))
+에이전트아이디	agent_id 		NUMBER 		N			FK 		에이전트테이블외래키
+킬수			kills  			NUMBER 		N 					전체 킬을 한 횟수		DEFAULT 0, CHECK (kills >= 0)
+데스수		deaths  		NUMBER 		N 					전체 죽은 횟수			DEFAULT 0, CHECK (deaths >= 0)
+어시스트수		assists  		NUMBER 		N 					전체 어시스트 횟수		DEFAULT 0, CHECK (assists >= 0)
+
+무기
+한글컬럼명 	영문컬럼명 	데이터타입 	널 허용 여부 	PK/FK 	설명					제약조건
+무기아이디		weapon_id 		 NUMBER 		N 			PK 		무기 고유 번호			GENERATED ALWAYS AS IDENTITY
+무기이름		weapon_name  	VARCHAR2(50) 	N 					무기 이름
+무기종류		weapon_type  	VARCHAR2(30) 	N 					무기 분류 / 소총, 저격소총 
+
+무기사용
+한글컬럼명 	영문컬럼명 	데이터타입 	널 허용 여부 	PK/FK 	설명					제약조건
+경기아이디		match_id  		VARCHAR2(36) 	N 			PK, FK 	경기테이블외래키
+플레이어아이디	player_id  		VARCHAR2(36) 	N		 	PK, FK  	플레이어테이블외래키
+무기아이디		weapon_id  	NUMBER		N			PK, FK	무기테이블외래키 
+무기별킬수		kill_count  		NUMBER 		N 					해당무기로 달성한 킬수	DEFAULT 0, CHECK (kill_count >= 0)
+발사수		shot_count  	NUMBER 		N 				 	해당 무기 총 발사 수		DEFAULT 0, CHECK (shot_count >= 0)
+명중수		hit_count  		NUMBER 		N 					해당 무기 적중 수		DEFAULT 0, CHECK (hit_count >= 0), CHECK (hit_count <= shot_count)
