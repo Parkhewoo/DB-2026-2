@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net">
   <diagram name="페이지-1" id="1k1CSb81lT1JtiVh_vVj">
-    <mxGraphModel dx="3703" dy="2295" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="5189" dy="3072" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -383,118 +383,118 @@
           <mxGeometry height="40" width="100" x="-1320" y="990" as="geometry" />
         </mxCell>
         <mxCell id="MLtzYNYTaKeiy9pOj-4Z-133" parent="1" style="whiteSpace=wrap;html=1;align=center;fontStyle=5" value="맵아이디" vertex="1">
-          <mxGeometry height="40" width="100" x="-1520" y="1080" as="geometry" />
+          <mxGeometry height="40" width="100" x="-1520" y="1050" as="geometry" />
         </mxCell>
         <mxCell id="MLtzYNYTaKeiy9pOj-4Z-134" parent="1" style="whiteSpace=wrap;html=1;align=center;" value="맵이름" vertex="1">
-          <mxGeometry height="40" width="100" x="-1420" y="1080" as="geometry" />
+          <mxGeometry height="40" width="100" x="-1420" y="1050" as="geometry" />
         </mxCell>
         <mxCell id="MLtzYNYTaKeiy9pOj-4Z-135" parent="1" style="whiteSpace=wrap;html=1;align=center;" value="맵종류" vertex="1">
-          <mxGeometry height="40" width="100" x="-1320" y="1080" as="geometry" />
+          <mxGeometry height="40" width="100" x="-1320" y="1050" as="geometry" />
         </mxCell>
         <mxCell id="MLtzYNYTaKeiy9pOj-4Z-136" parent="1" style="whiteSpace=wrap;html=1;align=center;fontStyle=5" value="에이전트아이디" vertex="1">
-          <mxGeometry height="40" width="100" x="-1520" y="1150" as="geometry" />
+          <mxGeometry height="40" width="100" x="-1520" y="1120" as="geometry" />
         </mxCell>
         <mxCell id="MLtzYNYTaKeiy9pOj-4Z-137" parent="1" style="whiteSpace=wrap;html=1;align=center;" value="에이전트이름" vertex="1">
-          <mxGeometry height="40" width="100" x="-1420" y="1150" as="geometry" />
+          <mxGeometry height="40" width="100" x="-1420" y="1120" as="geometry" />
         </mxCell>
         <mxCell id="MLtzYNYTaKeiy9pOj-4Z-138" parent="1" style="whiteSpace=wrap;html=1;align=center;" value="역할군" vertex="1">
-          <mxGeometry height="40" width="100" x="-1320" y="1150" as="geometry" />
+          <mxGeometry height="40" width="100" x="-1320" y="1120" as="geometry" />
         </mxCell>
         <mxCell id="MLtzYNYTaKeiy9pOj-4Z-139" parent="1" style="whiteSpace=wrap;html=1;align=center;fontStyle=5" value="시즌아이디" vertex="1">
-          <mxGeometry height="40" width="100" x="-1520" y="1210" as="geometry" />
+          <mxGeometry height="40" width="100" x="-1520" y="1180" as="geometry" />
         </mxCell>
         <mxCell id="MLtzYNYTaKeiy9pOj-4Z-140" parent="1" style="whiteSpace=wrap;html=1;align=center;" value="시즌이름" vertex="1">
-          <mxGeometry height="40" width="100" x="-1420" y="1210" as="geometry" />
+          <mxGeometry height="40" width="100" x="-1420" y="1180" as="geometry" />
         </mxCell>
         <mxCell id="MLtzYNYTaKeiy9pOj-4Z-141" parent="1" style="whiteSpace=wrap;html=1;align=center;" value="시작일" vertex="1">
-          <mxGeometry height="40" width="100" x="-1320" y="1210" as="geometry" />
+          <mxGeometry height="40" width="100" x="-1320" y="1180" as="geometry" />
         </mxCell>
         <mxCell id="MLtzYNYTaKeiy9pOj-4Z-142" parent="1" style="whiteSpace=wrap;html=1;align=center;" value="종료일" vertex="1">
-          <mxGeometry height="40" width="100" x="-1220" y="1210" as="geometry" />
+          <mxGeometry height="40" width="100" x="-1220" y="1180" as="geometry" />
         </mxCell>
         <mxCell id="MLtzYNYTaKeiy9pOj-4Z-143" parent="1" style="whiteSpace=wrap;html=1;align=center;fontStyle=5" value="경기아이디" vertex="1">
-          <mxGeometry height="40" width="100" x="-1520" y="1270" as="geometry" />
+          <mxGeometry height="40" width="100" x="-1520" y="1240" as="geometry" />
         </mxCell>
         <mxCell id="MLtzYNYTaKeiy9pOj-4Z-144" parent="1" style="whiteSpace=wrap;html=1;align=center;fontStyle=4" value="맵아이디" vertex="1">
-          <mxGeometry height="40" width="100" x="-1420" y="1270" as="geometry" />
+          <mxGeometry height="40" width="100" x="-1420" y="1240" as="geometry" />
         </mxCell>
         <mxCell id="MLtzYNYTaKeiy9pOj-4Z-145" parent="1" style="whiteSpace=wrap;html=1;align=center;fontStyle=4" value="시즌아이디" vertex="1">
-          <mxGeometry height="40" width="100" x="-1320" y="1270" as="geometry" />
+          <mxGeometry height="40" width="100" x="-1320" y="1240" as="geometry" />
         </mxCell>
         <mxCell id="MLtzYNYTaKeiy9pOj-4Z-146" parent="1" style="whiteSpace=wrap;html=1;align=center;" value="경기날짜" vertex="1">
-          <mxGeometry height="40" width="100" x="-1220" y="1270" as="geometry" />
+          <mxGeometry height="40" width="100" x="-1220" y="1240" as="geometry" />
         </mxCell>
         <mxCell id="MLtzYNYTaKeiy9pOj-4Z-147" parent="1" style="whiteSpace=wrap;html=1;align=center;" value="경기모드" vertex="1">
-          <mxGeometry height="40" width="100" x="-1120" y="1270" as="geometry" />
+          <mxGeometry height="40" width="100" x="-1120" y="1240" as="geometry" />
         </mxCell>
         <mxCell id="MLtzYNYTaKeiy9pOj-4Z-148" parent="1" style="whiteSpace=wrap;html=1;align=center;" value="진행시간" vertex="1">
-          <mxGeometry height="40" width="100" x="-1020" y="1270" as="geometry" />
+          <mxGeometry height="40" width="100" x="-1020" y="1240" as="geometry" />
         </mxCell>
         <mxCell id="MLtzYNYTaKeiy9pOj-4Z-149" parent="1" style="whiteSpace=wrap;html=1;align=center;" value="공격팀점수" vertex="1">
-          <mxGeometry height="40" width="100" x="-920" y="1270" as="geometry" />
+          <mxGeometry height="40" width="100" x="-920" y="1240" as="geometry" />
         </mxCell>
         <mxCell id="MLtzYNYTaKeiy9pOj-4Z-150" parent="1" style="whiteSpace=wrap;html=1;align=center;" value="수비팀점수" vertex="1">
-          <mxGeometry height="40" width="100" x="-820" y="1270" as="geometry" />
+          <mxGeometry height="40" width="100" x="-820" y="1240" as="geometry" />
         </mxCell>
         <mxCell id="MLtzYNYTaKeiy9pOj-4Z-151" parent="1" style="whiteSpace=wrap;html=1;align=center;fontStyle=5" value="경기아이디" vertex="1">
-          <mxGeometry height="40" width="100" x="-1520" y="1330" as="geometry" />
+          <mxGeometry height="40" width="100" x="-1520" y="1300" as="geometry" />
         </mxCell>
         <mxCell id="MLtzYNYTaKeiy9pOj-4Z-152" parent="1" style="whiteSpace=wrap;html=1;align=center;fontStyle=5" value="팀아이디" vertex="1">
-          <mxGeometry height="40" width="100" x="-1420" y="1330" as="geometry" />
+          <mxGeometry height="40" width="100" x="-1420" y="1300" as="geometry" />
         </mxCell>
         <mxCell id="MLtzYNYTaKeiy9pOj-4Z-153" parent="1" style="whiteSpace=wrap;html=1;align=center;" value="진영" vertex="1">
-          <mxGeometry height="40" width="100" x="-1320" y="1330" as="geometry" />
+          <mxGeometry height="40" width="100" x="-1320" y="1300" as="geometry" />
         </mxCell>
         <mxCell id="MLtzYNYTaKeiy9pOj-4Z-154" parent="1" style="whiteSpace=wrap;html=1;align=center;" value="경기결과" vertex="1">
-          <mxGeometry height="40" width="100" x="-1220" y="1330" as="geometry" />
+          <mxGeometry height="40" width="100" x="-1220" y="1300" as="geometry" />
         </mxCell>
         <mxCell id="MLtzYNYTaKeiy9pOj-4Z-155" parent="1" style="whiteSpace=wrap;html=1;align=center;fontStyle=5" value="경기아이디" vertex="1">
-          <mxGeometry height="40" width="100" x="-1520" y="1400" as="geometry" />
+          <mxGeometry height="40" width="100" x="-1520" y="1370" as="geometry" />
         </mxCell>
         <mxCell id="MLtzYNYTaKeiy9pOj-4Z-156" parent="1" style="whiteSpace=wrap;html=1;align=center;fontStyle=5" value="플레이어아이디" vertex="1">
-          <mxGeometry height="40" width="100" x="-1420" y="1400" as="geometry" />
+          <mxGeometry height="40" width="100" x="-1420" y="1370" as="geometry" />
         </mxCell>
         <mxCell id="MLtzYNYTaKeiy9pOj-4Z-157" parent="1" style="whiteSpace=wrap;html=1;align=center;fontStyle=4" value="팀아이디" vertex="1">
-          <mxGeometry height="40" width="100" x="-1320" y="1400" as="geometry" />
+          <mxGeometry height="40" width="100" x="-1320" y="1370" as="geometry" />
         </mxCell>
         <mxCell id="MLtzYNYTaKeiy9pOj-4Z-158" parent="1" style="whiteSpace=wrap;html=1;align=center;fontStyle=4" value="에이전트아이디" vertex="1">
-          <mxGeometry height="40" width="100" x="-1220" y="1400" as="geometry" />
+          <mxGeometry height="40" width="100" x="-1120" y="1370" as="geometry" />
         </mxCell>
         <mxCell id="MLtzYNYTaKeiy9pOj-4Z-159" parent="1" style="whiteSpace=wrap;html=1;align=center;" value="킬수" vertex="1">
-          <mxGeometry height="40" width="100" x="-1120" y="1400" as="geometry" />
+          <mxGeometry height="40" width="100" x="-1020" y="1370" as="geometry" />
         </mxCell>
         <mxCell id="MLtzYNYTaKeiy9pOj-4Z-160" parent="1" style="whiteSpace=wrap;html=1;align=center;" value="데스수" vertex="1">
-          <mxGeometry height="40" width="100" x="-1020" y="1400" as="geometry" />
+          <mxGeometry height="40" width="100" x="-920" y="1370" as="geometry" />
         </mxCell>
         <mxCell id="MLtzYNYTaKeiy9pOj-4Z-161" parent="1" style="whiteSpace=wrap;html=1;align=center;" value="어시스트수" vertex="1">
-          <mxGeometry height="40" width="100" x="-920" y="1400" as="geometry" />
+          <mxGeometry height="40" width="100" x="-820" y="1370" as="geometry" />
         </mxCell>
         <mxCell id="MLtzYNYTaKeiy9pOj-4Z-162" parent="1" style="whiteSpace=wrap;html=1;align=center;fontStyle=5" value="무기아이디" vertex="1">
-          <mxGeometry height="40" width="100" x="-1520" y="1460" as="geometry" />
+          <mxGeometry height="40" width="100" x="-1520" y="1430" as="geometry" />
         </mxCell>
         <mxCell id="MLtzYNYTaKeiy9pOj-4Z-163" parent="1" style="whiteSpace=wrap;html=1;align=center;" value="무기이름" vertex="1">
-          <mxGeometry height="40" width="100" x="-1420" y="1460" as="geometry" />
+          <mxGeometry height="40" width="100" x="-1420" y="1430" as="geometry" />
         </mxCell>
         <mxCell id="MLtzYNYTaKeiy9pOj-4Z-164" parent="1" style="whiteSpace=wrap;html=1;align=center;" value="무기종" vertex="1">
-          <mxGeometry height="40" width="100" x="-1320" y="1460" as="geometry" />
+          <mxGeometry height="40" width="100" x="-1320" y="1430" as="geometry" />
         </mxCell>
         <mxCell id="MLtzYNYTaKeiy9pOj-4Z-165" parent="1" style="whiteSpace=wrap;html=1;align=center;fontStyle=5" value="경기아이디" vertex="1">
-          <mxGeometry height="40" width="100" x="-1520" y="1520" as="geometry" />
+          <mxGeometry height="40" width="100" x="-1520" y="1490" as="geometry" />
         </mxCell>
         <mxCell id="MLtzYNYTaKeiy9pOj-4Z-166" parent="1" style="whiteSpace=wrap;html=1;align=center;fontStyle=5" value="플레이어아이디" vertex="1">
-          <mxGeometry height="40" width="100" x="-1420" y="1520" as="geometry" />
+          <mxGeometry height="40" width="100" x="-1420" y="1490" as="geometry" />
         </mxCell>
         <mxCell id="MLtzYNYTaKeiy9pOj-4Z-167" parent="1" style="whiteSpace=wrap;html=1;align=center;fontStyle=5" value="무기아이디" vertex="1">
-          <mxGeometry height="40" width="100" x="-1320" y="1520" as="geometry" />
+          <mxGeometry height="40" width="100" x="-1320" y="1490" as="geometry" />
         </mxCell>
         <mxCell id="MLtzYNYTaKeiy9pOj-4Z-168" parent="1" style="whiteSpace=wrap;html=1;align=center;" value="무기별킬수" vertex="1">
-          <mxGeometry height="40" width="100" x="-1220" y="1520" as="geometry" />
+          <mxGeometry height="40" width="100" x="-1220" y="1490" as="geometry" />
         </mxCell>
         <mxCell id="MLtzYNYTaKeiy9pOj-4Z-169" parent="1" style="whiteSpace=wrap;html=1;align=center;" value="발사수" vertex="1">
-          <mxGeometry height="40" width="100" x="-1120" y="1520" as="geometry" />
+          <mxGeometry height="40" width="100" x="-1120" y="1490" as="geometry" />
         </mxCell>
         <mxCell id="MLtzYNYTaKeiy9pOj-4Z-170" parent="1" style="whiteSpace=wrap;html=1;align=center;" value="명중수" vertex="1">
-          <mxGeometry height="40" width="100" x="-1020" y="1520" as="geometry" />
+          <mxGeometry height="40" width="100" x="-1020" y="1490" as="geometry" />
         </mxCell>
         <mxCell id="MLtzYNYTaKeiy9pOj-4Z-173" edge="1" parent="1" source="MLtzYNYTaKeiy9pOj-4Z-172" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=1;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;labelPadding=0 4;endArrow=none;endFill=0;" target="MLtzYNYTaKeiy9pOj-4Z-35">
           <mxGeometry relative="1" as="geometry" />
@@ -549,6 +549,9 @@
         </mxCell>
         <mxCell id="MLtzYNYTaKeiy9pOj-4Z-186" parent="1" style="ellipse;whiteSpace=wrap;html=1;align=center;" value="명중수" vertex="1">
           <mxGeometry height="40" width="100" x="-595" y="-70" as="geometry" />
+        </mxCell>
+        <mxCell id="F_cl9rJjMjpbhOzkfLFo-1" parent="1" style="whiteSpace=wrap;html=1;align=center;fontStyle=0" value="진영" vertex="1">
+          <mxGeometry height="40" width="100" x="-1220" y="1370" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
